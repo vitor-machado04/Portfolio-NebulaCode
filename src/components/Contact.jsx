@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
+import { EarthCanvas} from "../components/canvas"
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -110,11 +112,36 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-       
+      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[500px] '> 
+      <h3 className="mb-7 ">
+        <b className="text-2xl mr-0.5 ">
+          NEBULA
+        </b>
+        <b className="text-2xl
+        font-extralight border-b border-gray-500">
+        CODE
+        </b>
+        <b className="text-3xl mx-1 font-light text-gray-500">
+          |
+        </b>
+        <b className=""> 
+          <span className="text-sm text-blue-500 mr-3 font-light break-keep">#DesenvolvimentoWeb,</span>
+          <span className="text-sm text-emerald-500 mr-3 font-light break-all">#DesignUX|UI,</span>
+          <span className="text-sm text-rose-500 mr-3 font-light break-all">#Softwares,</span>
+          <span className="text-sm text-amber-500 mr-3 font-light break-al">#SocialMedia</span>
+        </b>
+      </h3>
+      <h2 className="text-5xl font-bold w-11/12 mt-16 mb-4 max-sm:text-center">
+      Transforme sua ideia em realiade digital!
+      </h2>
+      <p className="tracking-wider">
+      A NebulaCode é uma agência especializada em desenvolvimento de software personalizado, criando soluções únicas e eficientes para atender às necessidades de cada cliente. Conte conosco para transformar suas ideias em realidade digital. 
+      </p>
       </div>
+
+      
     </div>
+    
   );
 };
 

@@ -50,7 +50,7 @@ const testimonials = [
 
   {
     testimonial:
-      "O Mateus além de lindo é muitooo inteligente!",
+      "O Vitor além de lindo é muitooo inteligente!",
     name: "Jade Picon",
     designation: "Influencer",
     company: "Instagram",
@@ -58,7 +58,7 @@ const testimonials = [
   },
   {
     testimonial:
-    "O Mateus além de lindo é muitooo inteligente!",
+    "O Vitor além de lindo é muitooo inteligente!",
     name: "Duda Rubert",
     designation: "Influencer",
     company: "Instagram",
@@ -66,7 +66,7 @@ const testimonials = [
   },
   {
     testimonial:
-    "O Mateus além de lindo é muitooo inteligente!",
+    "O Vitor além de lindo é muitooo inteligente!",
     name: "Ana Castela",
     designation: "Cantora",
     image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Ana_Castela_2022.png",
