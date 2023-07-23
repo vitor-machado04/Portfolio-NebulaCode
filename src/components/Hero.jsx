@@ -30,7 +30,7 @@ const Hero = () => {
 
       <EarthCanvas/>
 
-      <div className='absolute xs:bottom-10 bottom-11 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-11 w-full flex justify-center items-center '>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -43,7 +43,7 @@ const Hero = () => {
                 repeatType: "loop",
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
+              />
           </div>
         </a>
       </div>

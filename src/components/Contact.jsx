@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { EarthCanvas} from "../components/canvas"
+import StarsCanvas from "./canvas/Stars";
 
 
 const Contact = () => {
@@ -59,7 +59,7 @@ const Contact = () => {
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
-      <div className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+      <div className='flex-[0.75] bg-violet-500/10 p-8 rounded-2xl '
       >
         <p className={styles.sectionSubText}>Fale conosco!</p>
         <h3 className={styles.sectionHeadText}>Contato</h3>
@@ -70,14 +70,14 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Seu Nome</span>
+            <span className='text-white font-medium mb-4 	'>Seu Nome</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
               placeholder="Qual o seu Nome?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-primary  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -88,7 +88,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Qual o seu melhor e-mail?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -99,13 +99,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='O que você quer nos dizer?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className=' resize-none	bg-primary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-primary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Enviando..." : "Enviar"}
           </button>
@@ -131,15 +131,16 @@ const Contact = () => {
           <span className="text-sm text-amber-500 mr-3 font-light break-al">#SocialMedia</span>
         </b>
       </h3>
-      <h2 className="text-5xl font-bold w-11/12 mt-16 mb-4 max-sm:text-center">
+      <h2 className="text-5xl font-bold w-11/12 mt-16 mb-12 max-sm:text-center ">
       Transforme sua ideia em realiade digital!
       </h2>
-      <p className="tracking-wider">
+      <p className="tracking-wider max-sm:text-center max-sm:mb-12 ">
       A NebulaCode é uma agência especializada em desenvolvimento de software personalizado, criando soluções únicas e eficientes para atender às necessidades de cada cliente. Conte conosco para transformar suas ideias em realidade digital. 
       </p>
       </div>
-
-      
+   
+        <StarsCanvas/>
+        
     </div>
     
   );

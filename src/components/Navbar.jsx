@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
+import StarsCanvas from "./canvas/Stars";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -29,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-4 fixed top-0 z-20 ${
+        scrolled ? "backdrop-blur-sm			" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -74,14 +75,16 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-10 purple-gradient absolute top-20 right-0 mx-2 min-w-[150px] z-10 rounded-l`}
+            } p-10 bg-transparent backdrop-blur absolute top-20 right-0 w-full  rounded-l h-screen`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <StarsCanvas/>
+        
+            <ul className='list-none flex justify-center items-center flex-1 flex-col  gap-8'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                  className={`font-poppins font-medium cursor-pointer text-[32px] ${
+                    active === nav.title ? "text-white" : "text-white"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);

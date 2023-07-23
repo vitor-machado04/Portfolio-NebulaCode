@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import StarsCanvas from "./canvas/Stars";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -15,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-quartary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
@@ -33,7 +34,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="max-sm:text-center">
         <p className={styles.sectionSubText}>DESPERTE O POTENCIAL DE SUA EMPRESA E LEVE-A AO PRÓXIMO NÍVEL</p>
         <h2 className={styles.sectionHeadText}>Nossos serviços</h2>
 
@@ -56,6 +57,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <StarsCanvas/>
     </>
   );
 };
