@@ -11,20 +11,27 @@ import {
   nodejs,
   mongodb,
 } from "../assets";
+import Carousel from "../components/Carousel";
+
 
 export const navLinks = [
   {
-    id: "about",
+    id: "AboutUs",
     title: "Sobre nós",
   },
   {
     id: "work",
+    title: "Ferramentas",
+  },
+  {
+    id: "Work",
     title: "Trabalhos",
   },
   {
     id: "contact",
     title: "Contato",
   },
+ 
 ];
 
 const services = [
@@ -50,34 +57,34 @@ const testimonials = [
 
   {
     testimonial:
-      "O Vitor além de lindo é muitooo inteligente!",
-    name: "Jade Picon",
-    designation: "Influencer",
+      "Feliz por fazer parte desta empresa de software, onde construímos não só código, mas também laços de colaboração e inovação. #OrgulhoDaEquipe",
+    name: "Mateus Cardoso",
+    designation: " Full Stack Developer",
     company: "Instagram",
-    image: "https://i.em.com.br/0iipxCYDVP7C8XX3gF_gSpigV_M=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/03/03/1464489/jade-picon-vestida-de-chiara-_1_1461741.png",
+    image: "https://pps.whatsapp.net/v/t61.24694-24/156765057_301941441860597_190039662309890083_n.jpg?ccb=11-4&oh=01_AdTG-LKtQJtUvlyvKjBRA9fNM-7eRqyl0pOAbv45apCUmQ&oe=64D805E8",
   },
   {
     testimonial:
-    "O Vitor além de lindo é muitooo inteligente!",
-    name: "Duda Rubert",
-    designation: "Influencer",
+    "Nada me deixa mais feliz do que fazer parte dessa equipe de desenvolvimento de software. Cada dia aqui é uma oportunidade de transformar ideias em realidade através do código. Orgulho total! 💻👏",
+    name: "Vitor Machado",
+    designation: "Full Stack Developer",
     company: "Instagram",
-    image: "https://www.famousbirthdays.com/headshots/duda-rubert-4.jpg",
+    image: "https://pbs.twimg.com/profile_images/1658174743617437699/s8ABTqMi_400x400.jpg",
   },
   {
     testimonial:
-    "O Vitor além de lindo é muitooo inteligente!",
-    name: "Ana Castela",
-    designation: "Cantora",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/01/Ana_Castela_2022.png",
+    "Trabalhar nesta empresa de desenvolvimento de software é um privilégio incrível! Cada dia é uma oportunidade de aprender, crescer e contribuir para projetos inovadores.",
+    name: "Vinicius Sieben",
+    designation: " Full Stack Developer",
+    image: "https://pbs.twimg.com/profile_images/1630221654415622146/jE0k5SdT_400x400.jpg",
   },
 ];
 
 const projects = [
-  {
-    name: "Frango na Brasa",
+ {
+    name: "Photographer",
     description:
-      "Plataforma baseada na Web que permite aos usuário administrador gerenciar seu restaurante e franquias, fornecendo uma solução conveniente e eficiente para as necessidades de transporte",
+      "Conheça o nosso template para portfolio, ideal para fotógrafos e filmmakers. Interface moderna, alta resolução para imagens e vídeos, personalização fácil e totalmente responsivo. Destaque-se no mercado! Experimente agora mesmo.",
     tags: [
       {
         name: "angular",
@@ -88,13 +95,13 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: 'https://www.montarumnegocio.com/wp-content/uploads/2021/06/Como-assar-frango-na-brasa-para-vender.jpg',
-    source_code_link: "https://github.com/"
+    image: '/src/assets/photo1.png',
+    source_code_link: "https://fotografia-red.vercel.app/"
   },
   {
-    name: "Frango na Brasa",
+    name: "Petshop",
     description:
-      "Plataforma baseada na Web que permite aos usuário administrador gerenciar seu restaurante e franquias, fornecendo uma solução conveniente e eficiente para as necessidades de transporte",
+      "Destaque seu petshop com nosso template exclusivo. Design moderno, navegação intuitiva e compatibilidade com dispositivos móveis. Personalize com informações sobre seus serviços e integre redes sociais. Eleve sua presença online agora!",
     tags: [
       {
         name: "angular",
@@ -105,13 +112,13 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: 'https://www.montarumnegocio.com/wp-content/uploads/2021/06/Como-assar-frango-na-brasa-para-vender.jpg',
-    source_code_link: "https://github.com/"
+    image: '/src/assets/petshop.jpeg',
+    source_code_link: "https://petshop-flame.vercel.app/"
   },
   {
-    name: "Frango na Brasa",
+    name: "Tattoo Studio",
     description:
-      "Plataforma baseada na Web que permite aos usuário administrador gerenciar seu restaurante e franquias, fornecendo uma solução conveniente e eficiente para as necessidades de transporte",
+      "Design artístico e atrativo, navegação intuitiva em todos os dispositivos. Personalize com portfólio de trabalhos, detalhes dos artistas e serviços oferecidos. Integre suas redes sociais e aumente sua visibilidade. Liberte a criatividade do seu studio!",
     tags: [
       {
         name: "angular",
@@ -122,9 +129,10 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: 'https://www.montarumnegocio.com/wp-content/uploads/2021/06/Como-assar-frango-na-brasa-para-vender.jpg',
-    source_code_link: "https://github.com/"
+    image: '/src/assets/tattoo.jpeg',
+    source_code_link: "https://tatto-studio-beta.vercel.app"
   }
+  
 ];
 
 export { services, testimonials, projects };

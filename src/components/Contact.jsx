@@ -59,7 +59,7 @@ const Contact = () => {
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
-      <div className='flex-[0.75] bg-violet-500/10 p-8 rounded-2xl '
+      <div className='flex-[0.75] bg-sky-500/10 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Fale conosco!</p>
         <h3 className={styles.sectionHeadText}>Contato</h3>
@@ -112,7 +112,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[500px] '> 
+      <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[550px] '> 
       <h3 className="mb-7 ">
         <b className="text-2xl mr-0.5 ">
           NEBULA
@@ -134,7 +134,7 @@ const Contact = () => {
       <h2 className="text-5xl font-bold w-11/12 mt-16 mb-12 max-sm:text-center ">
       Transforme sua ideia em realiade digital!
       </h2>
-      <p className="tracking-wider max-sm:text-center max-sm:mb-12 ">
+      <p className="tracking-wider max-sm:text-center max-sm:mb-16">
       A NebulaCode é uma agência especializada em desenvolvimento de software personalizado, criando soluções únicas e eficientes para atender às necessidades de cada cliente. Conte conosco para transformar suas ideias em realidade digital. 
       </p>
       </div>

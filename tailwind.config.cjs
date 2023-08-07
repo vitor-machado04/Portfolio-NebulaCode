@@ -9,6 +9,7 @@ module.exports = {
         secondary: "#aaa6c3",
         tertiary: "#151030",
         quartary: "#120133",
+        fifth: "#08112D",
 
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -28,4 +29,5 @@ module.exports = {
     },
   },
   plugins: [],
+  
 };

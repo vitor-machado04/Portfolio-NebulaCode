@@ -6,6 +6,8 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Carousel from "./Carousel";
+import AboutUs from "./AboutUs"
 
 
 export {
@@ -16,5 +18,7 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas, 
+  EarthCanvas,
+  Carousel, 
+  AboutUs,
 };

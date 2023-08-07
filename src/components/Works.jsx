@@ -3,10 +3,13 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { Viewicon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import StarsCanvas from "./canvas/Stars";
+import Carousel from "./Carousel";
+
 
 const ProjectCard = ({
   index,
@@ -23,10 +26,10 @@ const ProjectCard = ({
         scale: 1,
         speed: 450,
       }}
-      className="bg-quartary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-sky-500/10  p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative w-full h-[230px]">
-        <img
+      <img
           src={image}
           alt="project_image"
           className="w-full h-full object-cover rounded-2xl"
@@ -35,11 +38,11 @@ const ProjectCard = ({
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
-            className="bg-black	 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            className="bg-fifth opacity-70	 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
-              src={github}
-              alt="source code"
+              src={Viewicon} 
+              alt="source code" 
               className="w-1/2 h-1/2 object-contain"
             />
           </div>
@@ -74,7 +77,7 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+>
           Os projetos a seguir mostram nossas habilidades e experiência por meio
           de exemplos do mundo real do meu trabalho. Cada projeto é brevemente
           descrito com links para repositórios de código e demonstrações ao
@@ -89,8 +92,9 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+      <StarsCanvas/>
     </>
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Works, "Work");
